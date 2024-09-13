@@ -1,7 +1,7 @@
 let currentValue = "";
 let storedValue = "";
 let storedOperator = "";
-let shouldClearAfterFirstDigit = "";
+let shouldClearAfterFirstDigit = false; 
 
 // Affiche la valeur actuel dans l'inputresult
 function displayCurrentValue() {
@@ -104,6 +104,7 @@ addEventListenerToDigit("7");
 addEventListenerToDigit("8");
 addEventListenerToDigit("9");
 addEventListenerToDigit("0");
+addEventListenerToDigit(".");
 
 // On ajoute les event listener sur les operateurs 
 addEventListenerToOperator("/");
